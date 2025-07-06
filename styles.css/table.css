@@ -1,17 +1,12 @@
 table{
   border-collapse:collapse;
-  margin-left:37%;
 }
 td,th{
   border: 1px solid whitesmoke;
   padding:5px 10px;
   color: green;
 }
-footer {
-  text-align: center;
-}
 header {
-  text-align: center;
   color: blue;
 }
 body{
