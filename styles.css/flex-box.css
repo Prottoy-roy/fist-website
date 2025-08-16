@@ -1,0 +1,19 @@
+.flex {
+  border: 1px solid black;
+  height: 150px;
+  width: 140px;
+  background-color: aqua;
+  border-radius: 10px;
+  border-style: none;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-box-container {
+  border: 1px solid black;
+  display:flex;
+  height: 350px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
