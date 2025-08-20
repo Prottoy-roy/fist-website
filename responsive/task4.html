@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      border:1px black solid;
+      box-sizing: border-box;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .container{
+      gap: 10px;
+    }
+    .ballon-container {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+    }
+    .ballon > img {
+      width:100%;
+    }
+    .girl > img {
+      width:100%;
+    }
+    .girl-container {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+    }
+    .btn {
+      color: whitesmoke;
+      padding: 10px;
+      background-color: rgba(15, 65, 230, 0.587);
+      border-radius: 5px;
+      border-style:none;
+      cursor:pointer;
+    }
+    .btn:hover {
+      color: rgb(26, 23, 23);
+      background-color: rgb(237, 52, 172);
+    }
+    .btn:active {
+      background-color: aqua;
+    }
+    @media screen and (max-width: 576px) {
+      .ballon-container {
+        grid-template-columns: repeat(1,1fr);
+      }
+      .ballon>img {
+        margin-top: 1.5rem;
+        width:40%;
+      }
+      .girl>img {
+        width:40%;
+      }
+      .girl-container {
+        grid-template-columns: repeat(1,1fr);
+      }
+      .title-container {
+        width:40%;
+      }
+      .title-girl{
+        width:40%;
+      }
+      .btn {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ballon-container">
+      <div class="ballon">
+        <img src="../images/girl1.avif" alt="girl-picture">
+      </div>
+      <div class="title-container">
+        <h2>Post title is here</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, libero corrupti voluptatem praesentium ipsam necessitatibus omnis laborum. Hic, explicabo facilis.</p>
+        <button class="btn">Read more</button>
+      </div>
+      </div>
+    </div>
+    <div class="girl-container">
+      <div class="girl">
+        <img src="../images/girl.avif" alt="girl-picture">
+      </div>
+      <div class="girl-title">
+        <h2>Post title is here</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quis. Maiores, repellat harum dignissimos earum fugit illum soluta perferendis error!</p>
+        <button class="btn">Read more</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

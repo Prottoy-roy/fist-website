@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid layout</title>
+</head>
+<style>
+  .container {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+  }
+  .container2 {
+    display: flex;
+  }
+  .grid {
+    width:20%;
+    height:40vh;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .red {
+    background-color: red;
+  }
+  .orange {
+    background-color: orange;
+  }
+  .violet {
+    background-color: violet;
+  }
+  .grey {
+    background-color: grey;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="grid red">1</div>
+    <div class="container2">
+      <div class="grid orange">2</div>
+      <div class="grid violet">3</div>
+    <div class="grid grey">4</div>
+    </div>
+  </div>
+</body>
+</html>
