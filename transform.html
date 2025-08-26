@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform</title>
+  <style>
+    body{
+      margin: 0 200px;
+    }
+    .box-container,.inner {
+      width: 12rem;
+      height: 12rem;
+    }
+    .box-container{
+      background-color: aquamarine;
+    }
+    .inner{
+      background-color: rgba(174, 174, 55, 0.969);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      /* transform: rotate(25deg); */
+      /* transform: rotate(45deg); */
+      /* transform: scale(0.45); */
+      /* transform: skew(20deg); */
+      /* transform: scale(0.25 , 0.5); */
+    }
+    .inner:hover{
+      transform:rotate(45deg) scale(.80);
+    }
+    .box-container,.inner {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+    <h2>Transform and translate</h2>
+  <div class="container">
+    <div class="box-container">
+      <div class="inner">inner-1</div>
+    </div>
+    <div class="box-container">
+      <div class="inner">inner-2</div>
+    </div>
+    <div class="box-container">
+      <div class="inner">inner-3</div>
+    </div>
+  </div>
+</body>
+</html>
