@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>variables</title>
+  <style>
+    :root {
+      --primary-color:red;
+      --font-size:16px;
+    }
+    .container-title {
+      color:var(--primary-color);
+    }
+    .container-description{
+      color:var(--primary-color);
+    }
+    .lorem {
+      background-color:var(--primary-color);
+      font-size: var(--font-size);
+      width:calc(100% - 320px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="container-title">This is variables</h1>
+    <p class="container-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat, asperiores eveniet vel quasi beatae porro voluptas sit atque numquam!</p>
+  </div>
+  <div class="lorem">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+</body>
+</html>

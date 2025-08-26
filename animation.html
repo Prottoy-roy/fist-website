@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    /* @keyframes bounce {
+      0%{
+        left: 0px;
+      }
+      100%{
+        left:400px;
+      }
+    } */
+    @keyframes bounce {
+      0% {
+        left: 0px;
+        top:0px;
+      }
+      10% {
+        left:50px;
+        top:335px;
+      }
+      20% {
+        left:100px;
+        top:0px;
+      }
+      30% {
+        left:150px;
+        top:335px;
+      }
+      40% {
+        left:200px;
+        top:0px;
+      }
+      50% {
+        left:300px;
+        top:335px;
+      }
+      60% {
+        left: 350px;
+        top:0px;
+      }
+      70% {
+        left:400px;
+        top:335px;
+      }
+      80% {
+        left:450px;
+        top:0px;
+      }
+      90% {
+        left:500px;
+        top:335px;
+      }
+      100% {
+        left: 530px;
+        top:0px;
+      }
+    }
+    .container {
+      width: 600px;
+      height: 400px;
+      background-color: aquamarine;
+      border: 1px solid teal;
+    }
+    .ball {
+      width:4rem;
+      height: 4rem;
+      border:2px solid gold;
+      border-radius: 50%;
+      background-color: blueviolet;
+      position:relative;
+      animation: bounce 1s ease-in-out 1s infinite alternate;
+      animation: bounce 10s ease-out 1s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation</h1>
+  <div class="container">
+    <div class="ball"></div>
+  </div>
+</body>
+</html>
