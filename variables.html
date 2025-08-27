@@ -20,6 +20,18 @@
       font-size: var(--font-size);
       width:calc(100% - 320px);
     }
+    .sidebar {
+      background-color: lightblue;
+    }
+    .content{
+      background-color: lightgray;
+    }
+    .box {
+      display:grid;
+      gap:20px;
+      grid-template-rows: 500px;
+      grid-template-columns: 200px calc(100% - 200px - 20px);
+    }
   </style>
 </head>
 <body>
@@ -29,6 +41,10 @@
   </div>
   <div class="lorem">
     <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="box">
+    <div class="sidebar">sidebar</div>
+    <div class="content">side-container</div>
   </div>
 </body>
 </html>
