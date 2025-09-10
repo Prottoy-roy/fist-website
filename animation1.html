@@ -5,66 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>animation1</title>
   <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Gilroy';
-    }
-    html,body{
-      height: 100%;
-      width: 100%;
-    }
     body{
-      padding: 150px;
+      padding:150px;
     }
-    .card-1{
-      height:30vw;
-      width: 30vw;
-      background-color:rgba(255, 77, 0, 0.87);
-      border-radius: 50%;
-      filter:blur(15px);
+    #hero1{
+      width: 50vw;
+      height: 50vw;
+      background-color: rgb(255, 98, 0);
+      border-radius:50%;
       position:absolute;
-      animation-name: anime;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-direction: alternate;
-      
+      filter:blur(15px);
     }
-    .card-3{
-      height:30vw;
-      width: 30vw;
-      background-color:rgba(255, 77, 0, 0.87);
-      border-radius: 50%;
+    #hero2{
+      width: 50vw;
+      height: 50vw;
+      background-color: rgb(255, 98, 0);
       filter:blur(15px);
-      position:absolute;
-      animation-name: animes;
+      border-radius:50%;
+      animation-name:anime;
       animation-duration: 3s;
-      animation-iteration-count: infinite;
       animation-timing-function: linear;
+      animation-iteration-count: infinite;
       animation-direction: alternate;
     }
     @keyframes anime {
-      for{
-        transform:translate(-15%,-15%);
-      }
-      to{
-        transform: translate(15%,15%);
-      }
-    }
-    @keyframes animes {
-      for{
-        transform:translate(15%, 15%);
-      }
-      to{
+      from{
         transform: translate(-15%,-15%);
+      }
+      to{
+       transform:translate(15%,15%);
       }
     }
   </style>
 </head>
 <body>
-    <div class="card-1"></div>
-    <div class="card-3"></div>
+    <div id="hero1"></div>
+    <div id="hero2"></div>
 </body>
 </html>
